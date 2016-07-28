@@ -21,16 +21,17 @@ jQuery(document).ready(function($) {
                     $('.ico.thunder').addClass('bounceOutLeft').removeClass('bounceInLeft');
                     $('.ico.mobile').addClass('bounceOutRight').removeClass('bounceInRight');
                 }
+            },
+            afterRender: function(){
+                $('img.d').plaxify({"xRange": 40, "yRange": 40});
+                $('img.r').plaxify({"xRange": 20, "yRange": 20});
+                $('img.u').plaxify({"xRange": 10, "yRange": 10, "invert": true});
+                $('img.p').plaxify({"xRange": 40, "yRange": 40, "invert": true});
+                $('img.al').plaxify({"xRange": 30, "yRange": 30});
+                $.plax.enable();
             }
         }
     );
-
-    $('img.d').plaxify({"xRange": 40, "yRange": 40});
-    $('img.r').plaxify({"xRange": 20, "yRange": 20});
-    $('img.u').plaxify({"xRange": 10, "yRange": 10, "invert": true});
-    $('img.p').plaxify({"xRange": 40, "yRange": 40, "invert": true});
-    $('img.al').plaxify({"xRange": 30, "yRange": 30});
-    $.plax.enable();
 
     $('.arrow.flash').css('cursor', 'pointer').bind(
         'click',
