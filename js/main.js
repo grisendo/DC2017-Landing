@@ -22,7 +22,7 @@ jQuery(document).ready(function($) {
                     $('.ico.mobile').addClass('bounceOutRight').removeClass('bounceInRight');
                 }
             },
-            afterRender: function(){
+            afterLoad: function(){
                 $('img.d').plaxify({"xRange": 40, "yRange": 40});
                 $('img.r').plaxify({"xRange": 20, "yRange": 20});
                 $('img.u').plaxify({"xRange": 10, "yRange": 10, "invert": true});
